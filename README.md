@@ -5,7 +5,9 @@
 
 Copyright © 2026 Mohammad Farmani. All rights reserved.
 
-DeuLearn is a German vocabulary app for levels A1 to C2. Profiles, progress and settings stay on your device, and it works offline.
+DeuLearn is a German learning app for levels A1 to C2, with help in English or Persian. Profiles, progress and settings stay on your device, and it works offline.
+
+**Website and downloads: https://mfarmani85.github.io/DeuLearn/**
 
 ## Android
 
@@ -15,7 +17,7 @@ For spoken German, install a German voice: Settings → System → Text-to-speec
 
 ## iPhone
 
-1. Open **https://mfarmani85.github.io/DeuLearn/** in **Safari**.
+1. Open **https://mfarmani85.github.io/DeuLearn/** in **Safari** and tap **Open DeuLearn**.
 2. Tap the **Share** button, then **Add to Home Screen**, then **Add**.
 3. Open DeuLearn from your home screen. After the first launch it works offline.
 
@@ -35,4 +37,4 @@ The official Android app is signed by Mohammad Farmani. A copy that has been mod
 
 DeuLearn, including its source code, apps, vocabulary and exercise content, name, icon and design, is the exclusive property of **Mohammad Farmani**.
 
-This is **not** open-source software, and its source code is private. The files here are compiled, obfuscated builds. You may use the official apps for personal use, but you may not copy, modify, redistribute, rebrand, re-sign, host or publish DeuLearn or any part of it without written permission from Mohammad Farmani. Forking this repository does not grant any rights. See [LICENSE](LICENSE) for the full terms.
+This is **not** open-source software, and its source code is private. The files here are compiled, obfuscated builds and the download page. You may use the official apps for personal use, but you may not copy, modify, redistribute, rebrand, re-sign, host or publish DeuLearn or any part of it without written permission from Mohammad Farmani. Forking this repository does not grant any rights. See [LICENSE](LICENSE) for the full terms.

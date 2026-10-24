@@ -1,29 +1,241 @@
 <!doctype html>
-<!-- DeuLearn — Copyright (c) 2026 Mohammad Farmani. All rights reserved. Unauthorized copying, modification or redistribution is prohibited. -->
-<!-- DeuLearn — Copyright (c) 2026 Mohammad Farmani. All rights reserved. -->
-<html lang="de">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#FBF6E6" />
-    <meta name="author" content="Mohammad Farmani" />
-    <meta name="copyright" content="Copyright (c) 2026 Mohammad Farmani. All rights reserved." />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <meta name="apple-mobile-web-app-title" content="DeuLearn" />
-    <link rel="manifest" href="manifest.webmanifest" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" href="icon-192.png" />
-    <link rel="apple-touch-startup-image" href="splash.png" />
-    <title>DeuLearn</title>
-    <script type="module" crossorigin src="./assets/index-Cm4gstyR.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/vendor-CQLOp2qn.js">
-    <link rel="stylesheet" crossorigin href="./assets/vendor-BSpEHGsV.css">
-    <link rel="stylesheet" crossorigin href="./assets/index-BN-k-GzA.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script>if ("serviceWorker" in navigator) addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));</script>
-  </body>
+<!-- DeuLearn · © 2026 Mohammad Farmani. All rights reserved. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DeuLearn · Deutsch lernen, von A1 bis C2</title>
+<meta name="description" content="DeuLearn: learn German from A1 to C2 with about 3,900 words, grammar, books, games and a Goethe-style mock exam. Help in English or Persian. For Android and iPhone, works offline.">
+<meta name="author" content="Mohammad Farmani">
+<meta name="theme-color" content="#0E0E10">
+<meta property="og:title" content="DeuLearn · Deutsch lernen, von A1 bis C2">
+<meta property="og:description" content="German from A1 to C2, with help in English or Persian. For Android and iPhone, by Mohammad Farmani.">
+<meta property="og:image" content="https://mfarmani85.github.io/DeuLearn/img/og.jpg">
+<meta property="og:url" content="https://mfarmani85.github.io/DeuLearn/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="img/icon-192.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<style>
+@font-face{font-family:"Bricolage";src:url(fonts/bricolage-grotesque-latin-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Bricolage";src:url(fonts/bricolage-grotesque-latin-800-normal.woff2) format("woff2");font-weight:800;font-display:swap}
+@font-face{font-family:"Manrope";src:url(fonts/manrope-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Manrope";src:url(fonts/manrope-latin-600-normal.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Manrope";src:url(fonts/manrope-latin-800-normal.woff2) format("woff2");font-weight:800;font-display:swap}
+@font-face{font-family:"Vazirmatn";src:url(fonts/vazirmatn-arabic-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Vazirmatn";src:url(fonts/vazirmatn-arabic-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}
+:root{
+  --bg:#FBF6E6; --panel:#0E0E10; --card:#fffdf6; --line:rgba(20,18,10,.1);
+  --ink:#16140f; --mute:#6b6553; --red:#dd2120; --gold:#f5c11d; --gold2:#ffd84a;
+  --fh:"Bricolage","Manrope",system-ui,sans-serif; --f:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 var(--f);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--red)}
+.fa{font-family:"Vazirmatn",Tahoma,sans-serif;direction:rtl;unicode-bidi:isolate}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.flag{height:6px;background:linear-gradient(90deg,#111 0 33.3%,var(--red) 33.3% 66.6%,var(--gold) 66.6%)}
+
+/* hero */
+.hero{background:var(--panel);color:#fff;border-radius:0 0 34px 34px;overflow:hidden;position:relative}
+.hero::after{content:"";position:absolute;inset:auto -10% -60% 40%;height:120%;background:radial-gradient(closest-side,rgba(245,193,29,.16),transparent);pointer-events:none}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding-top:46px;padding-bottom:50px;position:relative;z-index:1}
+.brand{display:flex;align-items:center;gap:14px;margin-bottom:24px}
+.brand img{width:56px;height:56px;border-radius:15px}
+.brand span{color:#bdb8a8;font-size:14px;line-height:1.5}
+.brand b{color:#fff}
+h1{margin:0;font:800 clamp(42px,7.4vw,76px)/1.02 var(--fh);letter-spacing:-.02em}
+h1 em{font-style:normal;color:var(--gold)}
+.lead{color:#e9e5d8;font-size:clamp(17px,2.1vw,19px);margin:18px 0 6px;max-width:31em}
+.lead.fa{color:#bdb8a8;font-size:16px;margin:0 0 24px;text-align:left}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:12px 19px;border-radius:999px;font:800 15.5px var(--f);text-decoration:none;color:#fff;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18)}
+.pill.gold{background:linear-gradient(180deg,var(--gold2),var(--gold));color:#141210;border-color:transparent;box-shadow:0 8px 24px rgba(245,193,29,.3)}
+.pill svg{width:19px;height:19px}
+.levels{display:grid;gap:8px}
+.lv{display:grid;grid-template-columns:44px 1fr auto;align-items:center;gap:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:9px 14px 9px 9px}
+.lv i{font-style:normal;display:grid;place-items:center;height:34px;border-radius:11px;font:800 14px var(--fh);color:#16140f;box-shadow:inset 0 -3px 0 rgba(0,0,0,.18)}
+.lv:nth-child(-n+2) i{background:linear-gradient(180deg,var(--gold2),var(--gold))}
+.lv:nth-child(n+3):nth-child(-n+4) i{background:linear-gradient(180deg,#ff4a43,var(--red));color:#fff}
+.lv:nth-child(n+5) i{background:linear-gradient(180deg,#3a3a3e,#151517);color:var(--gold)}
+.lv b{font-weight:600;color:#fff}
+.lv span{color:#bdb8a8;font-size:13.5px}
+
+/* get cards */
+.get{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:-26px 0 10px;position:relative;z-index:2}
+.card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:0 16px 40px rgba(60,50,20,.1);scroll-margin-top:16px}
+.card h2{margin:0 0 2px;font:800 24px var(--fh);display:flex;align-items:center;gap:10px}
+.card h2 svg{width:28px;height:28px;flex:none}
+.card .sub{color:var(--mute);font-size:14px;margin:0 0 16px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:15px 18px;border-radius:16px;font:800 17px var(--f);text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.gold{background:linear-gradient(180deg,var(--gold2),var(--gold));color:#141210;box-shadow:0 10px 24px rgba(245,193,29,.32),inset 0 -3px 0 rgba(0,0,0,.12)}
+.btn.dark{background:linear-gradient(180deg,#2a2a2e,#0e0e10);color:#fff;box-shadow:0 10px 24px rgba(0,0,0,.22),inset 0 -3px 0 rgba(0,0,0,.4)}
+.btn small{font-weight:600;opacity:.7;font-size:13px}
+ol.steps{margin:16px 0 0;padding:0 0 0 1.3em;font-size:15px}
+ol.steps li{margin:4px 0}
+ol.steps li::marker{color:var(--red);font-weight:800}
+.note{font-size:13.8px;color:var(--mute);margin:12px 0 0;line-height:1.7}
+.note b{color:var(--ink)}
+
+/* sections */
+section{margin:64px 0}
+.kicker{display:block;color:var(--red);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+h3{font:800 clamp(28px,4vw,38px)/1.1 var(--fh);margin:0 0 22px;letter-spacing:-.015em}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.stat{background:var(--panel);color:#fff;border-radius:20px;padding:16px 18px}
+.stat b{display:block;font:800 30px/1.1 var(--fh);color:var(--gold)}
+.stat span{color:#bdb8a8;font-size:14px}
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.feat{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px}
+.feat .ic{font-size:26px;line-height:1;margin-bottom:8px}
+.feat b{display:block;font:800 18px var(--fh);margin-bottom:2px}
+.feat p{margin:0;color:var(--mute);font-size:14.5px;line-height:1.65}
+
+.shots{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 18px;scrollbar-width:thin;scrollbar-color:#d9cfa8 transparent}
+.shots figure{margin:0;flex:none;scroll-snap-align:start}
+.shots img{display:block;width:210px;aspect-ratio:390/844;object-fit:cover;border-radius:24px;border:1px solid var(--line);box-shadow:0 14px 34px rgba(60,50,20,.16);background:#fff}
+.shots figcaption{text-align:center;color:var(--mute);font-size:13.5px;margin-top:8px}
+
+table{width:100%;border-collapse:collapse;font-size:14px;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+th,td{padding:12px 15px;text-align:start;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child th,tr:last-child td{border-bottom:0}
+th{color:var(--mute);font-weight:600;width:34%}
+code{font:12.5px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;word-break:break-all;color:#3b2f0a}
+
+footer{border-top:1px solid var(--line);margin-top:64px;padding:26px 0 40px;color:var(--mute);font-size:14px;text-align:center}
+footer p{margin:4px 0}
+footer b{color:var(--ink)}
+
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:1fr}
+  .get{grid-template-columns:1fr;margin-top:18px}
+  .feats{grid-template-columns:1fr 1fr}
+  .stats{grid-template-columns:1fr 1fr}
+}
+@media (max-width:520px){
+  .wrap{padding:0 16px}
+  .hero{border-radius:0 0 26px 26px}
+  .feats{grid-template-columns:1fr}
+  .shots img{width:176px}
+  .card{padding:20px 18px}
+  .cta .pill{flex:1;justify-content:center}
+  .levels{grid-template-columns:1fr 1fr}
+  .lv{grid-template-columns:36px 1fr;gap:2px 10px;padding:8px 10px 8px 8px}
+  .lv i{grid-row:span 2;height:36px;font-size:13px}
+  .lv b{font-size:14px;line-height:1.3}
+  .lv span{font-size:12.5px;line-height:1.3}
+  th{width:auto;display:block;border-bottom:0;padding-bottom:0}
+  td{display:block}
+}
+</style>
+</head>
+<body>
+<div class="flag"></div>
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="brand"><img src="img/icon-192.png" alt="" width="56" height="56"><span>Version 1.0<br>by <b>Mohammad Farmani</b></span></div>
+      <h1>Deutsch lernen,<br>von <em>A1</em> bis <em>C2</em>.</h1>
+      <p class="lead">DeuLearn teaches German with about 3,900 words, grammar, short books, games and a Goethe-style mock exam. Explanations in English, Persian or both. Works offline.</p>
+      <p class="lead fa">آموزش آلمانی، با توضیح فارسی</p>
+      <div class="cta">
+        <a class="pill gold" href="#android"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.6 9.48l1.84-3.18a.38.38 0 0 0-.66-.38l-1.86 3.22a11.4 11.4 0 0 0-9.84 0L5.22 5.92a.38.38 0 0 0-.66.38L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>Android</a>
+        <a class="pill" href="#iphone"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.75c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.77-3.32-1.8-1.41-.14-2.76.83-3.47.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.28-1.6 2.78-.41 6.9 1.15 9.16.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.66zM14.1 6c.63-.77 1.06-1.83.94-2.9-.91.04-2.02.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.06-.52 2.69-1.27z"/></svg>iPhone</a>
+      </div>
+    </div>
+    <div class="levels" aria-label="Levels">
+      <div class="lv"><i>A1</i><b>Beginner</b><span>882 words</span></div>
+      <div class="lv"><i>A2</i><b>Elementary</b><span>732 words</span></div>
+      <div class="lv"><i>B1</i><b>Intermediate</b><span>648 words</span></div>
+      <div class="lv"><i>B2</i><b>Upper intermediate</b><span>543 words</span></div>
+      <div class="lv"><i>C1</i><b>Advanced</b><span>553 words</span></div>
+      <div class="lv"><i>C2</i><b>Mastery</b><span>540 words</span></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+<div class="get">
+  <div class="card" id="android">
+    <h2><svg viewBox="0 0 24 24" fill="#3ddc84" aria-hidden="true"><path d="M17.6 9.48l1.84-3.18a.38.38 0 0 0-.66-.38l-1.86 3.22a11.4 11.4 0 0 0-9.84 0L5.22 5.92a.38.38 0 0 0-.66.38L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>Android</h2>
+    <p class="sub">Android 7 or newer · built for Android 16 · about 3.1 MB</p>
+    <a class="btn gold" href="https://github.com/Mfarmani85/DeuLearn/raw/main/DeuLearn.apk" download>⬇ Download APK <small>v1.0</small></a>
+    <ol class="steps">
+      <li>Download <b>DeuLearn.apk</b>.</li>
+      <li>If asked, allow <b>Install unknown apps</b> for your browser or file manager.</li>
+      <li>Open the file and tap <b>Install</b>.</li>
+    </ol>
+    <p class="note"><b>German voice:</b> Settings → System → Text-to-speech → Google → Install voice data → German. Speaking exercises ask for the microphone the first time.</p>
+  </div>
+
+  <div class="card" id="iphone">
+    <h2><svg viewBox="0 0 24 24" fill="#16140f" aria-hidden="true"><path d="M16.37 12.75c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.77-3.32-1.8-1.41-.14-2.76.83-3.47.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.28-1.6 2.78-.41 6.9 1.15 9.16.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.66zM14.1 6c.63-.77 1.06-1.83.94-2.9-.91.04-2.02.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.06-.52 2.69-1.27z"/></svg>iPhone &amp; iPad</h2>
+    <p class="sub">No App Store needed · installs on your home screen</p>
+    <a class="btn dark" href="app/">▶ Open DeuLearn <small>web app</small></a>
+    <ol class="steps">
+      <li>Open this page in <b>Safari</b> and tap <b>Open DeuLearn</b>.</li>
+      <li>Tap the <b>Share</b> button, then <b>Add to Home Screen</b>.</li>
+      <li>Tap <b>Add</b> and open the app from your home screen. After the first launch it works offline.</li>
+    </ol>
+    <p class="note"><b>German voice:</b> Settings → Accessibility → Spoken Content → Voices → German. <b>Your profile and progress stay on this device.</b></p>
+  </div>
+</div>
+
+<section>
+  <span class="kicker">What's inside</span>
+  <h3>Everything you need, level by level.</h3>
+  <div class="stats">
+    <div class="stat"><b>≈3,900</b><span>words, A1 to C2</span></div>
+    <div class="stat"><b>4,043</b><span>dictionary entries</span></div>
+    <div class="stat"><b>6</b><span>levels</span></div>
+    <div class="stat"><b>EN · <span class="fa" style="color:inherit;font-size:inherit">فا</span></b><span>helper languages</span></div>
+  </div>
+  <div class="feats">
+    <div class="feat"><div class="ic">🎯</div><b>der, die, das</b><p>An article game for every noun. The colours stick, so the rest of the grammar gets easier.</p></div>
+    <div class="feat"><div class="ic">🃏</div><b>Practise</b><p>Flashcards, quizzes, listening and spelling, and phrases you tap to hear.</p></div>
+    <div class="feat"><div class="ic">🔁</div><b>Spaced review</b><p>Words you miss come back after 1, 3, 7, 14 and 30 days until they stick.</p></div>
+    <div class="feat"><div class="ic">🧩</div><b>Mini-games</b><p>Memory, Galgenmännchen, Wortsalat and more, using the words of your level.</p></div>
+    <div class="feat"><div class="ic">📘</div><b>Grammar</b><p>The key topics for each level, with examples to hear and quick checks.</p></div>
+    <div class="feat"><div class="ic">📚</div><b>Books</b><p>Short retellings of German classics written at your level, plus news-style reading.</p></div>
+    <div class="feat"><div class="ic">🎓</div><b>Exam practice</b><p>Lesen, Hören, Schreiben and Sprechen, plus a Goethe-style mock exam.</p></div>
+    <div class="feat"><div class="ic">🔤</div><b>Alphabet &amp; sounds</b><p>Every letter and key sound in the accents of Germany, Austria and Switzerland.</p></div>
+    <div class="feat"><div class="ic">🔒</div><b>Private profiles</b><p>A password-protected profile for each person. Everything stays on the device.</p></div>
+  </div>
+</section>
+
+<section>
+  <span class="kicker">Screenshots</span>
+  <h3>See it in action.</h3>
+  <div class="shots">
+    <figure><img src="img/shot-1.jpg" alt="Home screen" loading="lazy"><figcaption>Start</figcaption></figure>
+    <figure><img src="img/shot-2.jpg" alt="Article practice" loading="lazy"><figcaption>Üben</figcaption></figure>
+    <figure><img src="img/shot-3.jpg" alt="Spaced repetition review" loading="lazy"><figcaption>Wiederholen</figcaption></figure>
+    <figure><img src="img/shot-4.jpg" alt="Mini-games" loading="lazy"><figcaption>Spiele</figcaption></figure>
+    <figure><img src="img/shot-5.jpg" alt="Grammar topics" loading="lazy"><figcaption>Grammatik</figcaption></figure>
+    <figure><img src="img/shot-6.jpg" alt="Books" loading="lazy"><figcaption>Bücher</figcaption></figure>
+    <figure><img src="img/shot-7.jpg" alt="Exam practice" loading="lazy"><figcaption>Prüfung</figcaption></figure>
+    <figure><img src="img/shot-8.jpg" alt="Home screen with Persian help" loading="lazy"><figcaption><span class="fa">با توضیح فارسی</span></figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <span class="kicker">Authenticity</span>
+  <h3>Is my copy official?</h3>
+  <p style="margin:0 0 16px;font-size:15px;max-width:46em">The Android app is signed with Mohammad Farmani's private key. A copy that someone else has modified, re-signed or rebranded <b>will not run</b>: it shows <b>“Unofficial copy”</b> and closes. Only download DeuLearn from this page.</p>
+  <table>
+    <tr><th>Signer</th><td><code>CN=Mohammad Farmani, O=Mohammad Farmani</code></td></tr>
+    <tr><th>Signing certificate SHA-256</th><td><code>0175890c5adcaf0719aebb29396c742e810560d5e1c7e9a104d8464c4ec07f15</code></td></tr>
+    <tr><th>DeuLearn.apk SHA-256 (v1.0)</th><td><code>d30df152872c094f9c08236d8b87228deb2ea640007697cf3fcd4f99cd434da0</code></td></tr>
+  </table>
+</section>
+</main>
+
+<footer class="wrap">
+  <p>Created by <b>Mohammad Farmani</b> · <span class="fa">ساخته‌ی محمد فرمانی</span></p>
+  <p>© 2026 Mohammad Farmani. All rights reserved.</p>
+  <p><a href="https://github.com/Mfarmani85/DeuLearn/blob/main/LICENSE">License</a> · <a href="https://github.com/Mfarmani85/DeuLearn">GitHub</a></p>
+</footer>
+<div class="flag"></div>
+</body>
 </html>
