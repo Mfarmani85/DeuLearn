@@ -1,0 +1,40 @@
+DeuLearn — German Vocabulary App
+Copyright (c) 2026 Mohammad Farmani (محمد فرمانی). All rights reserved.
+
+PROPRIETARY LICENSE
+
+DeuLearn, including its source code, compiled applications (Android APK and
+iPhone web app), user interface design, graphics, icons, vocabulary data,
+example sentences, exercises, grammar explanations, name and documentation
+(together, "the Software"), is the exclusive property of Mohammad Farmani and
+is protected by copyright law and international treaties.
+
+The source code is private and is not published. The files in this
+repository are compiled, obfuscated builds. No license or right is granted
+to anyone except as written below.
+
+You MAY:
+  - download the official DeuLearn.apk from
+    https://github.com/Mfarmani85/DeuLearn and install it on your own devices
+    for personal, non-commercial use;
+  - use the official DeuLearn web app at https://mfarmani85.github.io/DeuLearn/
+    for personal, non-commercial use.
+
+You MAY NOT, without prior written permission from Mohammad Farmani:
+  - copy, modify, translate, adapt or create derivative works of the
+    Software or any part of it, including its vocabulary and exercise content;
+  - redistribute, sell, rent, publish, host, upload or share the Software, or
+    any modified version of it, including on app stores or websites;
+  - remove, alter or hide any copyright notice, author name or this license;
+  - decompile, de-obfuscate, reverse-engineer, re-sign, repackage or rebrand
+    the Software, or publish it under another name or author.
+
+Forking or copying this repository on GitHub does not grant any of the
+rights above.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. IN NO EVENT
+SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING
+FROM THE USE OF THE SOFTWARE.
+
+For permission requests, contact Mohammad Farmani through
+https://github.com/Mfarmani85
