@@ -11,7 +11,7 @@ DeuLearn is a German learning app for levels A1 to C2, with help in English or P
 
 ## Android
 
-Install the official app from [`DeuLearn.apk`](DeuLearn.apk) (version 1.0.0, Android 7.0 or newer, built for Android 16). On your phone, allow "Install unknown apps" for your browser or file manager, then open the APK.
+Install the official app from [`DeuLearn.apk`](DeuLearn.apk) (version 1.1.0, Android 7.0 or newer, built for Android 16). On your phone, allow "Install unknown apps" for your browser or file manager, then open the APK.
 
 For spoken German, install a German voice: Settings → System → Text-to-speech → Google Speech Services → Install voice data → German.
 
@@ -31,7 +31,7 @@ The official Android app is signed by Mohammad Farmani. A copy that has been mod
 |---|---|
 | Signer | CN=Mohammad Farmani, O=Mohammad Farmani |
 | Signing certificate SHA-256 | `0175890c5adcaf0719aebb29396c742e810560d5e1c7e9a104d8464c4ec07f15` |
-| DeuLearn.apk SHA-256 (v1.0.0) | `d30df152872c094f9c08236d8b87228deb2ea640007697cf3fcd4f99cd434da0` |
+| DeuLearn.apk SHA-256 (v1.1.0) | `707b544b5eb90947e595fa041df1737dd9cd75ec0d0d2725c76d70db16c194a5` |
 
 ## Copyright and license
 
